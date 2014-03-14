@@ -3,7 +3,6 @@ EatHere
 
 ### Panorama app with online menus for the Art Is In Bakery in Ottawa, ON
 
-
 #### Single panorama-based app that has the following features:
 
 - All JSon data pulled from the web
@@ -29,4 +28,8 @@ EatHere
 ##### Promotional images:
 - Shows a series of 6 thumbnails of various menu items. 
 
+===
 
+> Author Name : Alex Fournier
+>
+> Email Address : four0126@algonquinlive.com
