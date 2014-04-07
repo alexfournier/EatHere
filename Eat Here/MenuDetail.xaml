@@ -24,7 +24,7 @@
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="ARRT IS IN BAKERY" />
             <TextBlock x:Name="detailsTitle"
-                       Margin="9,-7,0,0"
+                       Margin="0,0,0,0"
                        Style="{StaticResource PhoneTextTitle1Style}"
                        Text="page name" />
         </StackPanel>

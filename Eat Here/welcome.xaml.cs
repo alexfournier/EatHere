@@ -32,8 +32,8 @@ namespace Eat_Here
             if (item != null) // if fast-clicking, it is possible to get here with nothing selected.  Ignore
                 NavigationService.Navigate(new Uri("/menuDetail.xaml", UriKind.Relative));
         }
-        
-         private void locationTap(object sender, System.Windows.Input.GestureEventArgs e)
+
+        private void locationTap(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/map.xaml", UriKind.Relative));
         }
@@ -50,7 +50,7 @@ namespace Eat_Here
             webBrowserTask.Show();
         }
 
-        private void phoneTap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void phoneTap(object sender, EventArgs e)
         {
             PhoneCallTask phoneTask = new PhoneCallTask();
             phoneTask.DisplayName = "Art Is In";
@@ -58,7 +58,7 @@ namespace Eat_Here
             phoneTask.Show();
         }
 
-        private void emailTap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void emailTap(object sender, EventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Send Email?", "Message to support", MessageBoxButton.OKCancel);
             if (result == MessageBoxResult.OK)
@@ -71,7 +71,7 @@ namespace Eat_Here
             }
         }
 
-        private void resTap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void resTap(object sender, EventArgs e)
         {
             SaveAppointmentTask SATask = new SaveAppointmentTask();
 

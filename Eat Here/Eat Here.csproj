@@ -138,6 +138,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="artTile.png" />
+    <Content Include="Assets\AppBar\cal.png" />
+    <Content Include="Assets\AppBar\phone.png" />
+    <Content Include="Assets\AppBar\loc.png" />
+    <Content Include="Assets\AppBar\mail.png" />
     <Content Include="Assets\resources.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

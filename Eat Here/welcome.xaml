@@ -31,33 +31,7 @@
                            Height="250"
                            Source="images/logoArt.png" />
 
-                    <StackPanel Margin="0,80,0,0"
-                                HorizontalAlignment="Center"
-                                Orientation="Horizontal">
-                        <Image Width="75"
-                               Margin="0,0,24,0"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Source="images/phone.png"
-                               Tap="phoneTap" />
-                        <Image Width="75"
-                               Margin="0,0,24,0"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Source="images/mail.png"
-                               Tap="emailTap" />
-                        <Image Width="75"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Source="images/loc.png"
-                               Tap="locationTap" />
-                        <Image Width="75"
-                               Margin="24,0,0,0"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Source="images/cal.png"
-                               Tap="resTap" />
-                    </StackPanel>
+
 
                 </StackPanel>
             </phone:PanoramaItem>
@@ -168,68 +142,24 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsMenuEnabled="True"
                               IsVisible="True"
-                              Mode="Minimized"
                               Opacity="1.0">
-            <shell:ApplicationBarIconButton Click="aboutPageClick"
-                                            IconUri="/Assets/AppBar/questionmark.png"
-                                            Text="About" />
+            <shell:ApplicationBarIconButton Click="phoneTap"
+                                            IconUri="/Assets/AppBar/phone.png"
+                                            Text="call" />
+            <shell:ApplicationBarIconButton Click="locationTap"
+                                            IconUri="/Assets/AppBar/loc.png"
+                                            Text="map" />
+            <shell:ApplicationBarIconButton Click="emailTap"
+                                            IconUri="/Assets/AppBar/mail.png"
+                                            Text="Email" />
+            <shell:ApplicationBarIconButton Click="resTap"
+                                            IconUri="/Assets/AppBar/cal.png"
+                                            Text="reservation" />
+
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Click="aboutPageClick" Text="About" />
+            </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
+
 </phone:PhoneApplicationPage>
-
-
-<!--
-    <phone:LongListSelector.ItemTemplate>
-    <DataTemplate>
-    <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
-    <StackPanel.Background>
-    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.6">
-    <GradientStop Color="Black" Offset="0"/>
-    <GradientStop Color="Black" Offset="0.95"/>
-    </LinearGradientBrush>
-    </StackPanel.Background>
-    <Image Source="images/sami.png" Height="80" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,0,0" />
-    <StackPanel Width="342">
-    <TextBlock Text="Sandwiches" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" />
-    <TextBlock Text=" The sandwiches are to die for as well as the pastries, they were fresh and filled with flavour." Style="{StaticResource PhoneTextSubtleStyle}" FontFamily="Arial" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="12,0,0,0" Width="330" Padding="0,0,0,8" />
-    </StackPanel>
-    </StackPanel>
-    </DataTemplate>
-    </phone:LongListSelector.ItemTemplate>
-    
-    <phone:LongListSelector.ItemTemplate>
-    <DataTemplate>
-    <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
-    <StackPanel.Background>
-    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.6">
-    <GradientStop Color="Black" Offset="0"/>
-    <GradientStop Color="Black" Offset="0.95"/>
-    </LinearGradientBrush>
-    </StackPanel.Background>
-    <Image Source="images/bread.png" Height="80" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,0,0" />
-    <StackPanel Width="342">
-    <TextBlock Text="Breads" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" />
-    <TextBlock Text="Sourdough or Pain au Levain, are dense delicious naturally leavened breads with a very delicate tang." Style="{StaticResource PhoneTextSubtleStyle}" FontFamily="Arial" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="12,0,0,0" Width="330" Padding="0,0,0,8" />
-    </StackPanel>
-    </StackPanel>
-    </DataTemplate>
-    </phone:LongListSelector.ItemTemplate>
-    
-    <phone:LongListSelector.ItemTemplate>
-    <DataTemplate>
-    <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
-    <StackPanel.Background>
-    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.6">
-    <GradientStop Color="Black" Offset="0"/>
-    <GradientStop Color="Black" Offset="0.95"/>
-    </LinearGradientBrush>
-    </StackPanel.Background>
-    <Image Source="images/bakers.png" Height="80" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,0,0" />
-    <StackPanel Width="342">
-    <TextBlock Text="Bakers Creations" Style="{StaticResource PhoneTextLargeStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" />
-    <TextBlock Text="Killer cookies! There's no question, Kevin is passionate about bread but he also happens to be obsessed with sweets." Style="{StaticResource PhoneTextSubtleStyle}" FontFamily="Arial" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="12,0,0,0" Width="330" Padding="0,0,0,8" />
-    </StackPanel>
-    </StackPanel>
-    </DataTemplate>
-    </phone:LongListSelector.ItemTemplate>
--->
